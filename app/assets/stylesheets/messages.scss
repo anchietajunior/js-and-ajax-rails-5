@@ -1,0 +1,21 @@
+.message {
+  border: 1px solid #333;
+  padding: 20px;
+}
+
+form#new_message {
+  border: 1px solid blue;
+  padding: 20px;
+  margin-top: 20px;
+
+  input[type=text] {
+    padding: 5px;
+    width: 100%;
+    display: block;
+  }
+}
+
+.error {
+  border: 1px solid red;
+
+}

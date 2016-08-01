@@ -1,0 +1,5 @@
+<% if @message.valid? %>
+    $(".messages").append("<%= j render @message %>");
+<% else %>
+  $(".error-wrapper").html("<%= j render 'form_error', object: @message %>");
+<% end %>

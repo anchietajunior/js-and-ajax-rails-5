@@ -1,0 +1,17 @@
+<h2>Messages</h2>
+
+<div class="messages">
+    <%= render @messages %>
+</div>
+
+<%= form_for @message, remote: true do |f| %>
+  <div class="error-wrapper">
+    <% if f.object.errors.present? %>
+      <%= render "form_error", object: f.object %>
+    <% end %>
+  </div>
+  <label>Text
+    <%= f.text_field :body %>
+  </label>
+  <%= f.submit %>
+<% end %>

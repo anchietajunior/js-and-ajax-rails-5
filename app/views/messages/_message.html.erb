@@ -1,0 +1,5 @@
+<div id="message_<%= message.id %>" class="message">
+  <%= message.id %> : <%= message.body %>
+  <%= link_to "&times".html_safe, message, method: 'delete', remote: true %>
+</div>
+
